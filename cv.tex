@@ -1,0 +1,94 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Wei}
+\familyname{Wei}
+\title{Resumé}               % optional, remove the line if not wanted
+\address{F0903024, Dongchuan Road 800}{Minhang, Shanghai}    % optional, remove the line if not wanted
+\mobile{15216708231}                    % optional, remove the line if not wanted
+%\phone{010-82907367}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{fraternite@live.cn}                      % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2009.9--Present}{Undergraduate}{Shanghai Jiao Tong University}{Shanghai}{\textit{Junior}}{Department of Computer Science and Engineering}  % arguments 3 to 6 are optional
+
+\section{Awards and Honors}
+\cvline{2010.10}{Academic Excellence Scholarship ($2^{nd}$ class) of Shanghai Jiao Tong University.}
+\cvline{2011.4}{Second Place of \textit{Xiwang Cup} (top football competition in SJTU).}
+\cvline{2011.9}{Third Prize of Mathematical Contest in Modeling in Shanghai.}
+\cvline{2011.10}{Academic Excellence Scholarship ($2^{nd}$ class) of Shanghai Jiao Tong University.}
+\cvline{2011.11}{Merit Student of Shanghai Jiao Tong University.}
+\cvline{2012.5}{Champion of \textit{Xiwang Cup} (top football competition in SJTU).}
+
+\section{Experience}
+\cventry{2010.4--Present}{Referee}{SJTU Football Association (SJTUFA)}{}{}{Work as a referee for more than 40 matches.}
+\cventry{2010.9--Present}{Player}{SEIEE Football Team}{}{}{Our team won $2^{nd}$ place in 2011 and won $1^{st}$ place in 2012. Since 2011.9, I am one of the main players in our team.}
+\cventry{2010.10.2--17}{Volunteer}{Shanghai Expo}{}{}{I am very happy that I can help a lot of people there.}
+\cventry{2011.6--2012.6}{President}{SJTUFA}{}{}{SJTUFA runs Xinsheng Cup (for freshmen), Xiwang Cup (for all students) and Zhiyuan Cup (for graduate students). As the President of SJTUFA, I learned a lot ranging from how to communicate with each other and how to assign works to others and how to coordinate with each other\ldots }                % arguments 3 to 6 are optional
+\cventry{2011.6--Present}{Member}{Advanced Network Lab (ANL)}{CS, SJTU}{}{Learn how to do research. My supervisor is Guihai Chen, Xiaofeng Gao and Fan Wu.}
+\cventry{2011.7--Present}{Member}{Data Center Research Group}{ANL}{CS, SJTU}{Dicuss about data center networks every week.}
+\cventry{2012.6--Present}{Student Member}{China Computer Association (CCF) Student Member}{}{}{}
+\cventry{2012.6--Present}{Student Member}{Association for Computing Machinery (ACM) Student Member}{}{}{}
+
+\section{Languages}
+\cvline{TOEFL}{Reading: 29, Listening: 30, Speaking: 23, Writing: 29. Total: 111.}
+\cvline{CET-4}{Listening: 224, Reading: 224, Writing: 119, Comprensive: 62. Total: 629.}
+\cvline{CET-6}{Listening: 214, Reading: 244, Writing: 85, Comprensive:64. Total: 607.}
+
+\section{Computer skills}
+\cvline{Programming Languages}{Master C/C++, Python, Matlab.\newline{Also familiar with html, javascript.}}
+
+\section{Interests}
+\cvline{Animation}{\small One Piece is my favorite and I can also learn a lot from Luffy.}
+\cvline{Soccer}{\small I really enjoy playing soccer together with my friends. I win a lot of awards with my teammates and recently the school of electrical engineering and electronics just won the champion of \textit{Xiwang Cup} in SJTU.}
+\cvline{Programming}{\small Sometimes, I would like to program some useful tools for me to make it more easier to do something. For example, I once write a small program that can help me synchronise with the slides that instructors upload to the course website.}
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\section{Research Interest}
+\cvline{Data Center}{Utilizing wireless in data center networks. Optimization problems.}
+\cvline{Others}{Although I currently mainly focus on DCNs, I am also very interested in other topics such as AI and data mining. After taking \textit{Mining of Massive Datasets} courses, I feel that they are also really interesting.}
+
+% Publications from a BibTeX file
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
