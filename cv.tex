@@ -15,6 +15,13 @@
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
+% timeline
+\usepackage[firstyear=2009,lastyear=2016]{moderntimeline}
+% timeline usage
+% \tlcventry{1999}{2002}{WYSIWYG User}{Unnamed Company}{Somewhere}{}{Tried hard to typeset documents}
+% \tlcventry[blue]{2002}{0}{Happy TeXnician}{Any Company}{Anywhere}{}{Achieved nice typography and shared code with friends}
+
+
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
@@ -24,17 +31,22 @@
 % personal data
 \firstname{Wei}
 \familyname{Wei}
-\title{Resumé}               % optional, remove the line if not wanted
+% \title{Resumé}               % optional, remove the line if not wanted
 \address{F0903024, Dongchuan Road 800}{Minhang, Shanghai}    % optional, remove the line if not wanted
 \mobile{15216708231}                    % optional, remove the line if not wanted
 %\phone{010-82907367}                      % optional, remove the line if not wanted
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
-\email{fraternite@live.cn}                      % optional, remove the line if not wanted
+\email{weiweisjtu@gmail.com}                      % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
 \photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{}                 % optional, remove the line if not wanted
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
 
 
 %----------------------------------------------------------------------------------
@@ -43,49 +55,76 @@
 \begin{document}
 \maketitle
 
+\vspace{-12mm}
 \section{Education}
-\cventry{2009.9--Present}{Undergraduate}{Shanghai Jiao Tong University}{Shanghai}{\textit{Junior}}{Department of Computer Science and Engineering}  % arguments 3 to 6 are optional
+\tlcventry[blue]{2009}{0}{Undergraduate}{Shanghai Jiaotong University}{Shanghai}{}{Deptartment of Computer Science and Engineering}
+\tlcventry[blue]{2009}{0}{GPA \& Ranking}{}{Overall GPA: 3.84 (89.84), Major GPA: 3.82 (89.59)}{Ranking: 5/130}{Major Courses: Algorithm, Computer Networking, Mining of Massive Dataset and so on.}
+
+\section{Projects}
+\tllabelcventry[blue]{2012}{2013}{2012.4-6}{Wireless Data Center Network (WDCN)}{Survey}{}{}{Research achievements: \cite{WCTDCN} and English journal version is under way.}
+\tllabelcventry[blue]{2013}{2014}{2012.6-8}{Pre-Alert Management System}{Conference}{}{}{Research achievements: \cite{INFOCOM2013} and I am responsible for the pre-alert part.}
+\tllabelcventry[blue]{2012}{2014}{2012.6-8}{Channel Allocation in WDCN}{}{}{}{Considering adding MIMO antennas  to Wireless DCN.}
 
 \section{Awards and Honors}
-\cvline{2010.10}{Academic Excellence Scholarship ($2^{nd}$ class) of Shanghai Jiao Tong University.}
-\cvline{2011.4}{Second Place of \textit{Xiwang Cup} (top football competition in SJTU).}
-\cvline{2011.9}{Third Prize of Mathematical Contest in Modeling in Shanghai.}
-\cvline{2011.10}{Academic Excellence Scholarship ($2^{nd}$ class) of Shanghai Jiao Tong University.}
-\cvline{2011.11}{Merit Student of Shanghai Jiao Tong University.}
-\cvline{2012.5}{Champion of \textit{Xiwang Cup} (top football competition in SJTU).}
+\tldatelabelcventry[blue]{2010}{2010.10}{Scholarship}{Academic Excellence Scholarship ($2^{nd}$ class) of Shanghai Jiao Tong University}{}{}{}
+\vspace{-8mm}
+\tldatelabelcventry[blue]{2011}{2011.9}{Scholarship}{Academic Excellence Scholarship ($2^{nd}$ class) of Shanghai Jiao Tong University}{}{}{}
+\vspace{-8mm}
+\tldatelabelcventry[blue]{2011}{2011.9}{Modeling}{Third Prize of Mathematical Contest in Modeling in Shanghai}{}{}{}
+\vspace{-8mm}
+\tldatelabelcventry[blue]{2012}{2011.11}{Three good student}{Three Good Student of Shanghai Jiao Tong University.}{}{}{}
 
 \section{Experience}
-\cventry{2010.4--Present}{Referee}{SJTU Football Association (SJTUFA)}{}{}{Work as a referee for more than 40 matches.}
-\cventry{2010.9--Present}{Player}{SEIEE Football Team}{}{}{Our team won $2^{nd}$ place in 2011 and won $1^{st}$ place in 2012. Since 2011.9, I am one of the main players in our team.}
-\cventry{2010.10.2--17}{Volunteer}{Shanghai Expo}{}{}{I am very happy that I can help a lot of people there.}
-\cventry{2011.6--2012.6}{President}{SJTUFA}{}{}{SJTUFA runs Xinsheng Cup (for freshmen), Xiwang Cup (for all students) and Zhiyuan Cup (for graduate students). As the President of SJTUFA, I learned a lot ranging from how to communicate with each other and how to assign works to others and how to coordinate with each other\ldots }                % arguments 3 to 6 are optional
-\cventry{2011.6--Present}{Member}{Advanced Network Lab (ANL)}{CS, SJTU}{}{Learn how to do research. My supervisor is Guihai Chen, Xiaofeng Gao and Fan Wu.}
-\cventry{2011.7--Present}{Member}{Data Center Research Group}{ANL}{CS, SJTU}{Dicuss about data center networks every week.}
-\cventry{2012.6--Present}{Student Member}{China Computer Association (CCF) Student Member}{}{}{}
-\cventry{2012.6--Present}{Student Member}{Association for Computing Machinery (ACM) Student Member}{}{}{}
+\tllabelcventry[blue]{2011}{0}{2011.9}{Member}{Advanced Network Lab (ANL)}{}{}{ANL is directed by Prof. Guihai Chen and its research interest is computer networing.}
+\tllabelcventry[blue]{2012}{0}{2012.3}{Member}{Data Center Networking Group of ANL}{}{}{DCN group is directed by Xiaofeng Gao and Guihai Chen and focus on issues regarding DCN.}
+\tllabelcventry[blue]{2013}{0}{2012.6}{Student Member}{Association for Computing Machinery (ACM) Student Member}{}{}{}
+\vspace{-5mm}
+\tllabelcventry[blue]{2013}{0}{2012.6}{Student Member}{China Computer Association (CCF) Student Member}{}{}{}
 
-\section{Languages}
-\cvline{TOEFL}{Reading: 29, Listening: 30, Speaking: 23, Writing: 29. Total: 111.}
-\cvline{CET-4}{Listening: 224, Reading: 224, Writing: 119, Comprensive: 62. Total: 629.}
-\cvline{CET-6}{Listening: 214, Reading: 244, Writing: 85, Comprensive:64. Total: 607.}
 
-\section{Computer skills}
-\cvline{Programming Languages}{Master C/C++, Python, Matlab.\newline{Also familiar with html, javascript.}}
+%---------- Begin Version 1.0 ----------
+%\section{Awards and Honors}
+%\cvline{2010.10}{Academic Excellence Scholarship ($2^{nd}$ class) of Shanghai Jiao Tong University.}
+%\cvline{2011.4}{Second Place of \textit{Xiwang Cup} (top football competition in SJTU).}
+%\cvline{2011.9}{Third Prize of Mathematical Contest in Modeling in Shanghai.}
+%\cvline{2011.10}{Academic Excellence Scholarship ($2^{nd}$ class) of Shanghai Jiao Tong University.}
+%\cvline{2011.11}{Merit Student of Shanghai Jiao Tong University.}
+%\cvline{2012.5}{Champion of \textit{Xiwang Cup} (top football competition in SJTU).}
 
-\section{Interests}
-\cvline{Animation}{\small One Piece is my favorite and I can also learn a lot from Luffy.}
-\cvline{Soccer}{\small I really enjoy playing soccer together with my friends. I win a lot of awards with my teammates and recently the school of electrical engineering and electronics just won the champion of \textit{Xiwang Cup} in SJTU.}
-\cvline{Programming}{\small Sometimes, I would like to program some useful tools for me to make it more easier to do something. For example, I once write a small program that can help me synchronise with the slides that instructors upload to the course website.}
+%\section{Experience}	
+%\cventry{2010.4--Present}{Referee}{SJTU Football Association (SJTUFA)}{}{}{Work as a referee for more than 40 matches.}
+%\cventry{2010.9--Present}{Player}{SEIEE Football Team}{}{}{Our team won $2^{nd}$ place in 2011 and won $1^{st}$ place in 2012. Since 2011.9, I am one of the main players in our team.}
+%\cventry{2010.10.2--17}{Volunteer}{Shanghai Expo}{}{}{I am very happy that I can help a lot of people there.}
+%\cventry{2011.6--2012.6}{President}{SJTUFA}{}{}{SJTUFA runs Xinsheng Cup (for freshmen), Xiwang Cup (for all students) and Zhiyuan Cup (for graduate students). As the President of SJTUFA, I learned a lot ranging from how to communicate with each other and how to assign works to others and how to coordinate with each other\ldots }                % arguments 3 to 6 are optional
+%\cventry{2011.6--Present}{Member}{Advanced Network Lab (ANL)}{CS, SJTU}{}{Learn how to do research. My supervisor is Guihai Chen, Xiaofeng Gao and Fan Wu.}
+%\cventry{2011.7--Present}{Member}{Data Center Research Group}{ANL}{CS, SJTU}{Dicuss about data center networks every week.}
+%\cventry{2012.6--Present}{Student Member}{China Computer Association (CCF) Student Member}{}{}{}
+%\cventry{2012.6--Present}{Student Member}{Association for Computing Machinery (ACM) Student Member}{}{}{}
 
-\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+%\section{Languages}
+%\cvline{TOEFL}{Reading: 29, Listening: 30, Speaking: 23, Writing: 29. Total: 111.}
+%\cvline{CET-4}{Listening: 224, Reading: 224, Writing: 119, Comprensive: 62. Total: 629.}
+%\cvline{CET-6}{Listening: 214, Reading: 244, Writing: 85, Comprensive:64. Total: 607.}
 
-\section{Research Interest}
-\cvline{Data Center}{Utilizing wireless in data center networks. Optimization problems.}
-\cvline{Others}{Although I currently mainly focus on DCNs, I am also very interested in other topics such as AI and data mining. After taking \textit{Mining of Massive Datasets} courses, I feel that they are also really interesting.}
+%\section{Computer skills}
+%\cvline{Programming Languages}{Master C/C++, Python, Matlab.\newline{Also familiar with html, javascript.}}
+
+%\section{Interests}
+%\cvline{Animation}{\small One Piece is my favorite and I can also learn a lot from Luffy.}
+%\cvline{Soccer}{\small I really enjoy playing soccer together with my friends. I win a lot of awards with my teammates and recently the school of electrical engineering and electronics just won the champion of \textit{Xiwang Cup} in SJTU.}
+%\cvline{Programming}{\small Sometimes, I would like to program some useful tools for me to make it more easier to do something. For example, I once write a small program that can help me synchronise with the slides that instructors upload to the course website.}
+
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Research Interest}
+%\cvline{Data Center}{Utilizing wireless in data center networks. Optimization problems.}
+%\cvline{Others}{Although I currently mainly focus on DCNs, I am also very interested in other topics such as AI and data mining. After taking \textit{Mining of Massive Datasets} courses, I feel that they are also really interesting.}
+%---------- End Version 1.0 ----------
+
 
 % Publications from a BibTeX file
-\nocite{*}
-\bibliographystyle{plain}
+% \nocite{*}
+\bibliographystyle{unsrt}
 \bibliography{publications}       % 'publications' is the name of a BibTeX file
 
 \end{document}
