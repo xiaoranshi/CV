@@ -9,14 +9,14 @@
 \documentclass[11pt,a4paper]{moderncv}
 
 % moderncv themes
-\moderncvtheme[black]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[black]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
 %\moderncvtheme[green]{classic}                % idem
 
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
 % timeline
-\usepackage[firstyear=2009,lastyear=2016]{moderntimeline}
+\usepackage[firstyear=2008,lastyear=2017]{moderntimeline}
 % timeline usage
 % \tlcventry{1999}{2002}{WYSIWYG User}{Unnamed Company}{Somewhere}{}{Tried hard to typeset documents}
 % \tlcventry[blue]{2002}{0}{Happy TeXnician}{Any Company}{Anywhere}{}{Achieved nice typography and shared code with friends}
@@ -58,12 +58,13 @@
 \vspace{-12mm}
 \section{Education}
 \tlcventry[black]{2009}{0}{Undergraduate}{Shanghai Jiao Tong University}{Shanghai}{}{Major: Computer Science and Engineering}
-\tlcventry[black]{2009}{0}{GPA \& Ranking}{}{Overall GPA: 3.84 (89.84), Major GPA: 3.82 (89.59)}{Ranking: 5/120}{Major Courses: Algorithm (100), Computer Networking (92), Mining of Massive Dataset (95), Operating System (99) and so on.}
+\tlcventry[black]{2009}{0}{GPA \& Ranking}{}{Overall GPA: 89.84, Major GPA: 89.59}{Ranking: 5/130}{Major Courses: Algorithm (100), Computer Networking (92), Mining of Massive Dataset (95), Operating System (99) and so on.}
 
 \section{Academic Experience}
-\tllabelcventry[black]{2012}{2013}{2012.4-6}{Wireless Data Center Network (WDCN)}{Survey}{}{}{We summarize the history and the future of the development of WDCN and work out a survey \cite{WCTDCN} about the optimization probelm and design issues of WDCN.}
-\tllabelcventry[black]{2013}{2014}{2012.6-8}{Pre-Alert Management System}{Conference}{}{}{We propose a distributed manager which is in charge of VM migration and flow control using forecasted future demands.\cite{INFOCOM2013} and I am responsible for the pre-alert part.}
-\tllabelcventry[black]{2012}{2014}{2012.8-10}{Quality Assured VM Placement}{}{}{}{Considering correlation between VMs to better allocate scarce resources. Utilizing modern portfolio theory in VM placement to assure resources are allocated without SLA violations.}
+\tllabelcventry[black]{2012}{2013}{2012.4-6}{Wireless Data Center Network (WDCN)}{Survey}{}{}{We summarize the history and the future of the development of WDCN and work out a survey \cite{ZTE:2012} about the optimization probelm and design issues of WDCN.}
+\tllabelcventry[black]{2013}{2014}{2012.6-8}{Pre-Alert Management System}{Conference}{}{}{We propose a distributed manager which is in charge of VM migration and flow control using forecasted future demands.\cite{INFOCOM:2013} and I am responsible for the pre-alert part.}
+\tllabelcventry[black]{2012}{2014}{2012.8-10}{Quality Assured VM Placement}{Conference}{}{}{We present a novel dynamic VM placement method in \cite{ICC:2013} and take correlation among VMs into consideration to better allocate scarce resources. Utilizing modern portfolio theory in VM placement to assure resources are allocated without SLA violations.}
+
 
 %---------- Begin Version 1.0 ----------
 %\section{Awards and Honors}
@@ -111,6 +112,8 @@
 \bibliography{publications}       % 'publications' is the name of a BibTeX file
 
 \section{Awards and Honors}
+\tldatelabelcventry[black]{2009}{2009.6}{Three good student}{Three Good Student of Beijing.}{}{}{}
+\vspace{-8mm}
 \tldatelabelcventry[black]{2010}{2010.10}{Scholarship}{Jidian Electronics Scholarship}{}{}{}
 \vspace{-8mm}
 \tldatelabelcventry[black]{2010}{2010.10}{Scholarship}{Academic Excellence Scholarship ($2^{nd}$ class) of SJTU}{}{}{}
@@ -122,8 +125,8 @@
 \tldatelabelcventry[black]{2012}{2011.11}{Three good student}{Three Good Student of Shanghai Jiao Tong University.}{}{}{}
 
 \section{Membership}
-\tllabelcventry[black]{2011}{0}{2011.9}{Member}{Advanced Network Lab (ANL)}{}{}{ANL is directed by Prof. Guihai Chen and its research interest is computer networing.}
-\tllabelcventry[black]{2012}{0}{2012.3}{Member}{Data Center Networking Group of ANL}{}{}{DCN group is directed by Xiaofeng Gao and Guihai Chen and focus on issues regarding DCN.}
+\tllabelcventry[black]{2011}{0}{2011.9}{Research Assistant}{Advanced Network Lab (ANL)}{}{}{ANL is directed by Prof. Guihai Chen and its research interest is computer networking.}
+\tllabelcventry[black]{2012}{0}{2012.3}{Research Assistant}{Data Center Networking Group of ANL}{}{}{DCN group is directed by Xiaofeng Gao and Guihai Chen and focus on issues regarding DCN.}
 \tllabelcventry[black]{2013}{0}{2012.6}{Student Member}{Association for Computing Machinery (ACM) Student Member}{}{}{}
 \vspace{-5mm}
 \tllabelcventry[black]{2013}{0}{2012.6}{Student Member}{China Computer Association (CCF) Student Member}{}{}{}
@@ -132,17 +135,23 @@
 \cvline{TOEFL}{Reading: 29, Listening: 30, Speaking: 23, Writing: 29. Total: 111.}
 \cvline{GRE}{Verbal Reasoning: 154, Quantitative Reasoning: 170, Analytical Writing: 4.}
 
-\section{Experiment \& Computer Skills}
-\tldatelabelcventry[black]{2009}{2009.10}{Science and Technology Innovation}{Part 1}{}{}{Work out a radio and a multimeter.}
+\section{Experiments}
+\tldatelabelcventry[black]{2010}{2010.10}{PRP}{Image Processing}{}{}{Implement a system in \underline{Matlab} that can detect spatial temporal interest point. My program can take a short video as input and analyze the interest points in both space and time.}
 \vspace{-4mm}
-\tldatelabelcventry[black]{2010}{2010.10}{PRP}{Image Processing}{}{}{Implement a system in Matlab that can detect spatial temporal interest point. My program can take a short video as input and analyze the interest points in both space and time.}
+\tldatelabelcventry[black]{2011}{2011.11}{Science and Technology Innovation}{Part 2-B}{}{\hfill Score: 96}{Program a little car that can automatically run on tracks. A camera is used for taking the environment as input and I am responsible for generating the route of the car using \underline{OpenCV}.}
 \vspace{-4mm}
-\tldatelabelcventry[black]{2011}{2011.11}{Science and Technology Innovation}{Part 2-B}{}{}{Program a little car that can automatically run on tracks. A camera is used for taking the environment as input and I am responsible for generating the route that the car take using OpenCV.}
+\tldatelabelcventry[black]{2011}{2011.11}{Science and Technology Innovation}{Part 3-D}{}{\hfill Score: 94.3}{Lectures are about cloud computing and virtualization. Course project is about judging whether the application is running under a virtual machine or not. \underline{C} and \underline{assembly} is used to finish the project.}
 \vspace{-4mm}
-\tldatelabelcventry[black]{2011}{2011.11}{Science and Technology Innovation}{Part 3-D}{}{}{Lectures are about cloud computing and virtualization. My project is judging whether the application is running under a virtual machine or not.}
+\tldatelabelcventry[black]{2011}{2011.11}{Course Project of Operating System}{Design and implementation}{}{\hfill Score: 97}{I learned \underline{advanced linux programming} to design and implement a file system based on file allocation table that people can access it through Internet.}
 \vspace{-4mm}
-\tldatelabelcventry[black]{2012}{2012.4}{Science and Technology Innovation}{Part 4-J}{}{}{Lectures are about neural network and our project is to automatically classify patents in Japanese. We use LibSVM and Matlab to finish our project.}
-\cvline{}{More Course Projects \ldots}
+\tldatelabelcventry[black]{2012}{2012.4}{Science and Technology Innovation}{Patrt 4-J}{}{\hfill Score: 95}{Lectures are mainly about neural network and support vector machine. Our project is to automatically classify patents in Japanese. We use \underline{LibSVM} and \underline{Matlab} to finish our project.}
+
+\section{Computer Skills}
+\cvline{Programming}{C/C++, Matlab, Python, Ruby, Perl, Java, JavaScript, PHP, MySQL, Awk, Octave, Bash.}
+\cvline{Document}{\LaTeX, Word, Excel, Vim, TeXworks, Gnuplot, Visio.}
+
+\section{Activities}
+
 \end{document}
 
 
