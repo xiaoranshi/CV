@@ -1,18 +1,18 @@
 \begin{thebibliography}{1}
 
 \bibitem{ZTE:2012}
-Wei Wei, Xuanzhong Wei, Xiaofeng Gao, and Guihai Chen.
+\underline{Wei Wei}, Xuanzhong Wei, Xiaofeng Gao, and Guihai Chen.
 \newblock Wireless communication technology in data center networks.
 \newblock {\em ZTE Communications}, 2012.
 
 \bibitem{INFOCOM:2013}
-Xiaofeng Gao, Xuanzhong Wei, Wei Wei, Tao Chen, and Guihai Chen.
+Xiaofeng Gao, Xuanzhong Wei, \underline{Wei Wei}, Tao Chen, and Guihai Chen.
 \newblock Sheriff: A regional pre-alert management scheme in wireless data
   center networks.
 \newblock In {\em submission to INFOCOM}. IEEE, 2013.
 
 \bibitem{ICC:2013}
-Wei Wei, Xiaofeng Gao, Xuanzhong Wei, Tao Chen, and Guihai Chen.
+\underline{Wei Wei}, Xuanzhong Wei, Tao Chen, Xiaofeng Gao, and Guihai Chen.
 \newblock Dynamic correlative vm placement for quality-assured cloud service.
 \newblock In {\em submission to ICC}. IEEE, 2013.
 
