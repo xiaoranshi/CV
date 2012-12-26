@@ -13,10 +13,11 @@
 % timeline usage
 % \tlcventry{1999}{2002}{WYSIWYG User}{Unnamed Company}{Somewhere}{}{Tried hard to typeset documents}
 % \tlcventry[blue]{2002}{0}{Happy TeXnician}{Any Company}{Anywhere}{}{Achieved nice typography and shared code with friends}
+
 \definecolor{royal}{RGB}{0, 0, 0} 
 
 % adjust the page margins
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.86]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 \AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
@@ -24,14 +25,14 @@
 % personal data
 \firstname{Wei}
 \familyname{Wei}
-% \title{Resumé}               % optional, remove the line if not wanted
+% \title{Curriculum Vitae}               % optional, remove the line if not wanted
 \address{F0903024, Dongchuan Road 800}{Minhang, Shanghai}    % optional, remove the line if not wanted
 \mobile{(+86)1521-670-8231}                    % optional, remove the line if not wanted
 %\phone{010-82907367}                      % optional, remove the line if not wanted
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
 \email{weiweisjtu@gmail.com}                      % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
-\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{}                 % optional, remove the line if not wanted
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -50,53 +51,77 @@
 
 \vspace{-12mm}
 \section{Education}
-\tldatelabelcventry[royal]{2009}{2009.6}{High school graduate}{Yuxin School Attached to Capital Normal University}{Beijing}{}{}
-\vspace{-4mm}
-\tllabelcventry[royal]{2009}{0}{2009.9}{Undergraduate}{Shanghai Jiao Tong University}{Shanghai}{}{
+\tllabelcventry[royal]{2009}{0}{2009.9}{Undergraduate}{}{Shanghai Jiao Tong University}{Shanghai}{
 \begin{itemize}
+\setlength{\itemindent}{1em}
 \item \textbf{Major:} Computer Science and Engineering.
-\item \textbf{GPA \& Ranking:} Overall GPA: 89.84, Major GPA: 89.59, Ranking: 5/130.
-\item \textbf{Standardized Test:}
-	\begin{itemize}
-	\item \textbf{GRE:} Verbal Reasoning: 154, Quantitative Reasoning: 170, Analytical Writing: 4.
-	\item \textbf{TOEFL:} Reading: 29, Listening: 30, Speaking: 23, Writing: 29. Total: 111.
-	\end{itemize}
-\item \textbf{Major Courses:} \footnotesize{Algorithm (100), Computer Networking (92), Mining of Massive Dataset (95), Operating System (99), Computability Theory (93), Compiler Principles (92), Software Engineering (91), Discrete Mathematics (97), Linear Algebra (96), Probability and Statistics (97), and so on.}
+\item \textbf{GPA \& Ranking:} Overall GPA: 89.9/100, Major GPA: 89.68/100, Ranking: 5/123.
+%\item \textbf{Standardized Test:}
+%	\begin{itemize}
+%	\item \textbf{GRE:} Verbal Reasoning: 154, Quantitative Reasoning: 170, Analytical Writing: 4.
+%	\item \textbf{TOEFL:} Reading: 29, Listening: 30, Speaking: 23, Writing: 29. Total: 111.
+%	\end{itemize}
+\item \textbf{Major Courses:} \footnotesize{Algorithm and Complexity (100), Computer Networking (92), Mining of Massive Dataset (95), Operating System (99), Computability Theory (93), Compiler Principles (92), Software Engineering (91), Discrete Mathematics (97), Linear Algebra (96), Probability and Statistics (97), and so on.}
 \end{itemize}
 }
+\vspace{-4mm}
+\tldatelabelcventry[royal]{2009}{2009.6}{High school graduate}{Yuxin School Attached to Capital Normal University}{Beijing}{}{}
+\vspace{-4mm}
+
 
 \section{Academic Experience}
 \tllabelcventry[royal]{2014}{0}{2011.9}{Research Assistant}{Data Center Research Group}{Advanced Network Lab (ANL)}{}{
 \begin{itemize}
+\setlength{\itemindent}{1em}
 \item Advisor: Xiaofeng Gao (\href{mailto:gao-xf@cs.sjtu.edu.cn}{\textcolor{blue}{\underline{gao-xf@cs.sjtu.edu.cn}}}) and Guihai Chen (\href{mailto:gchen@cs.sjtu.edu.cn}{\textcolor{blue}{\underline{gchen@cs.sjtu.edu.cn}}}).
-\item Supervised by Dr. Gao and Dr. Chen, I conduct research about utilizing wireless links in data center networks and find better scheduling algorithms to do VM migration to improve the overall performance.
+\item Research interest: cloud computing, data center networks, big data.
 \end{itemize}
 }
-\tllabelcventry[royal]{2015}{2016}{2012.4-6}{Project Member}{Wireless Data Center Network (WDCN)}{Data Center Research Group}{}{
+\tllabelcventry[royal]{2018}{2019}{2012.9-}{Project Member}{Multicast in Hybrid Data Center Network}{Data Center Research Group}{}{
 \begin{itemize}
-%\item Superviser: Xiaofeng Gao and Guihai Chen.
-\item We summarized the history of the development of WDCN and looked into the future of WDCN. We worked out a survey about optimization problems and design issues in WDCN.
+\setlength{\itemindent}{1em}
+\item Presented NEMO, a novel efficient multicast routing scheme for hybrid data center networks.
+\item Theorectical analysis about the performance of NEMO.
+\item Extensive simulations show that NEMO outperforms previous schemes.
 	\begin{itemize}
-	\item Research achievements: a journal article~\cite{ZTE:2012} accepted.
-	\end{itemize}
-\end{itemize}
-}
-\tllabelcventry[royal]{2016}{2017}{2012.6-8}{Project Member}{Pre-Alert Management System}{Data Center Research Group}{}{
-\begin{itemize}
-%\item Supervisor: Xiaofeng Gao and Guihai Chen.
-\item We proposed a novel distributed manager which is in charge of VM migration scheduling and flow control using forecasted future demands.
-\item I am responsible for the pre-alert part and also take part in simulation part.
-	\begin{itemize}
-	\item Research achievements: a conference paper~\cite{INFOCOM:2013} submitted.
+	\setlength{\itemindent}{1em}
+	\item Research achievements: a conference paper~\cite{WCNC:2013} submitted.
 	\end{itemize}
 \end{itemize}
 }
 \tllabelcventry[royal]{2017}{2018}{2012.7-9}{Project Leader}{Quality Assured VM Placement}{Data Center Research Group}{}{
 \begin{itemize}
-\item We presented a novel dynamic VM placement method and take correlation among VMs into consideration.
-\item Utilizing modern portfolio theory to assure resources are allocated without SLA violations.
+\setlength{\itemindent}{1em}
+\item Proposed a novel dynamic VM placement method and take correlation among VMs into consideration.
+\item Utilize modern portfolio theory to assure resources are allocated without SLA violations.
 	\begin{itemize}
+	\setlength{\itemindent}{1em}
 	\item Research achievements: a conference paper~\cite{ICC:2013} submitted.
+	\end{itemize}
+\end{itemize}
+}
+\tllabelcventry[royal]{2016}{2018}{2012.6-10}{Project Member}{SHERIFF:Pre-Alert Management System}{Data Center Research Group}{}{
+\begin{itemize}
+\setlength{\itemindent}{1em}
+%\item Supervisor: Xiaofeng Gao and Guihai Chen.
+\item Designed a novel distributed manager which is in charge of VM migration and flow control.
+\item Utilize forecasted demands given by ARIMA and Artificial Neural Network to improve the performance.
+\item Responsible for the pre-alert part and also take part in the simulation part.
+	\begin{itemize}
+	\setlength{\itemindent}{1em}
+	\item Research achievements: a conference paper~\cite{ICDCS:2013} submitted.
+	\end{itemize}
+\end{itemize}
+}
+\tllabelcventry[royal]{2015}{2016}{2012.4-6}{Project Member}{Wireless Data Center Network (WDCN)}{Data Center Research Group}{}{
+\begin{itemize}
+\setlength{\itemindent}{1em}
+%\item Superviser: Xiaofeng Gao and Guihai Chen.
+\item Summarized the history of the development of WDCN and looked into the future of WDCN.
+\item Worked out a survey about optimization problems and design issues in WDCN.
+	\begin{itemize}
+	\setlength{\itemindent}{1em}
+	\item Research achievements: a journal article~\cite{ZTE:2012} accepted.
 	\end{itemize}
 \end{itemize}
 }
@@ -112,39 +137,44 @@
 %\bibliography{publications}       % 'publications' is the name of a BibTeX file
 
 \begin{thebibliography}{10}
-\bibitem{ZTE:2012} \underline{Wei Wei}, Xuanzhong Wei, Xiaofeng Gao, and Guihai Chen. ``Wireless communication technology in data center networks,'' \emph{ZTE Communications}, vol. 18, pp. 1--6, August 2012.
+\bibitem{ZTE:2012} \underline{Wei Wei}, Xuanzhong Wei, Xiaofeng Gao, and Guihai Chen. ``Wireless Technology for Data-center Networks,'' \emph{ZTE Communications}, vol. 18, pp. 1--6, August 2012. (Download URL: \url{http://db.tt/c2NO2khM})
 \vspace{-3mm}
-\bibitem{ICC:2013} \underline{Wei Wei}, Xuanzhong Wei, Tao Chen, Xiaofeng Gao, and Guihai Chen. ``Dynamic Correlative VM Placement for Quality-Assured Cloud Service,'' submitted to \href{http://www.ieee-icc.org/2013/}{\emph{the IEEE International Conference On Communications (IEEE ICC 2013)}}, September 30, 2012. (under review)
+\bibitem{ICC:2013} \underline{Wei Wei}, Xuanzhong Wei, Tao Chen, Xiaofeng Gao, and Guihai Chen. ``Dynamic Correlative VM Placement for Quality-Assured Cloud Service,'' submitted to \href{http://www.ieee-icc.org/2013/}{\emph{the IEEE International Conference On Communications (IEEE ICC 2013)}}. (under review) (Download Unavailable)
 \vspace{-3mm}
-\bibitem{INFOCOM:2013} Xiaofeng Gao, Xuanzhong Wei, \underline{Wei Wei}, Tao Chen, and Guihai Chen. ``Sheriff: A Regional Pre-Alert Management Scheme in Wireless Data Center Networks'', submitted to \href{http://infocom.di.unimi.it/}{\emph{the 32nd IEEE International Conference on Computer Communications (INFOCOM 2013)}}. (under review)
+\bibitem{WCNC:2013} Xiaofeng Gao, \underline{Wei Wei}, Xuanzhong Wei, Tao Chen, Fan Wu, and Guihai Chen. ``NEMO: A Novel Efficient Multicast Routing Scheme for Hybrid Data Center Networks'', submitted to \href{}{\emph{IEEE Wireless Communications and Networking Conference (IEEE WCNC 2013)}}. (under review) (Download Unavailable)
+\vspace{-3mm}
+\bibitem{ICDCS:2013} Xiaofeng Gao, Xuanzhong Wei, \underline{Wei Wei}, Tao Chen, and Guihai Chen. ``Sheriff: A Regional Pre-Alert Management Scheme in Hybrid Data Center Networks'', submitted to \href{http://infocom.di.unimi.it/}{\emph{International Conference on Distributed Computing Systems (ICDCS 2013)}}. (under review) (Download Unavailable)
 \end{thebibliography}
 
 \section{Awards and Honors}
-\tldatelabelcventry[royal]{2009}{2009.6}{Merit student}{Merit Student of Beijing}{}{}{}
+\tldatelabelcventry[royal]{2018}{2012.10}{National Scholarship}{Top 1\% nationwide}{}{}{}
 \vspace{-8mm}
-\tldatelabelcventry[royal]{2011}{2010.10}{Scholarship}{Jidian Electronics Scholarship}{}{}{}
+\tldatelabelcventry[royal]{2018}{2012.10}{Academic Excellence Scholarship ($1^{st}$ class) of SJTU}{Top 2\% }{}{}{}
 \vspace{-8mm}
-\tldatelabelcventry[royal]{2011}{2010.10}{Scholarship}{Academic Excellence Scholarship ($2^{nd}$ class) of SJTU}{}{}{}
-\vspace{-8mm}
-\tldatelabelcventry[royal]{2013}{2011.9}{Scholarship}{Academic Excellence Scholarship ($2^{nd}$ class) of SJTU}{}{}{}
+\tldatelabelcventry[royal]{2014}{2011.11}{Merit student of Shanghai Jiao Tong University}{3\% of all the students in SJTU}{}{}{}
 \vspace{-8mm}
 \tldatelabelcventry[royal]{2013}{2011.9}{Modeling}{Third Prize of China Undergraduate Mathematical Contest in Modeling}{}{}{}
 \vspace{-8mm}
-\tldatelabelcventry[royal]{2014}{2011.11}{Merit student}{Merit student of Shanghai Jiao Tong University.}{}{}{}
-%\vspace{-8mm}
+\tldatelabelcventry[royal]{2011}{2010.10}{Jidian Electronics Scholarship}{Top 30 of approximately 560 in SEIEE}{}{}{}
+\vspace{-8mm}
+\tldatelabelcventry[royal]{2009}{2009.6}{Merit student of Beijing}{About 2\% of all the students in Beijing}{}{}{}
+\vspace{-5mm}
+\tllabelcventry[royal]{2010}{2014}{2010.10-2011.10}{Academic Excellence Scholarship ($2^{nd}$ class) of SJTU}{Top 10\%}{2 times}{}{}
+\vspace{-5mm}
 
-\section{Membership}
+%\section{Membership}
 %\tllabelcventry[royal]{2011}{0}{2011.9}{Research Assistant}{Advanced Network Lab (ANL)}{}{}{ANL is directed by Prof. Guihai Chen (\href{mailto:gchen@cs.sjtu.edu.cn}{gchen@cs.sjtu.edu.cn}) and its research interest is computer network.}
 %\tllabelcventry[royal]{2012}{0}{2012.3}{Research Assistant}{Data Center Networking Group of ANL}{}{}{DCN group is directed by Xiaofeng Gao (\href{mailto:gao-xf@cs.sjtu.edu.cn}{gao-xf@cs.sjtu.edu.cn}) and focuses on issues regarding DCN.}
-\tllabelcventry[royal]{2013}{0}{2012.6}{Student Member}{Association for Computing Machinery (ACM) Student Member}{}{}{}
-\vspace{-5mm}
-\tllabelcventry[royal]{2013}{0}{2012.6}{Student Member}{China Computer Association (CCF) Student Member}{}{}{}
+%\tllabelcventry[royal]{2013}{0}{2012.6}{Student Member}{Association for Computing Machinery (ACM) Student Member}{}{}{}
+%\vspace{-5mm}
+%\tllabelcventry[royal]{2013}{0}{2012.6}{Student Member}{China Computer Association (CCF) Student Member}{}{}{}
+%\vspace{-5mm}
 
-%\section{Standardized Test}
-%\cvline{TOEFL}{Reading: 29, Listening: 30, Speaking: 23, Writing: 29. Total: 111.}
-%\cvline{GRE}{Verbal Reasoning: 154, Quantitative Reasoning: 170, Analytical Writing: 4.}
+\section{Standardized Test}
+\cvline{TOEFL}{Reading: 29, Listening: 30, Speaking: 23, Writing: 29. Total: 111.}
+\cvline{GRE}{Verbal Reasoning: 154, Quantitative Reasoning: 170, Analytical Writing: 4.}
 
-\section{Experiments}
+\section{Course Projects}
 %\tldatelabelcventry[royal]{2010}{2010.10}{PRP}{Image Processing}{}{}{
 %\begin{itemize}
 %\item Learn the basics about digital image processing and learn to use \underline{Matlab} and \underline{OpenCV}.
@@ -152,60 +182,77 @@
 %\end{itemize}
 %}
 %\vspace{-4mm}
-\tldatelabelcventry[royal]{2012}{2011.4}{Computer Organization Lab}{}{}{\hfill Score: 94}{
+\tldatelabelcventry[royal]{2016}{2012.4}{Project Member}{Science and Technology Innovation Patrt 4-J}{}{\hfill Score: 95}{
 \begin{itemize}
-\item Implement a CPU on Xilinx FPGA experimental board using \underline{Verilog} with 5-stage pipeline and support MIPS instructions.
+\setlength{\itemindent}{1em}
+\item Learn about the principals of neural network and implement on our own using \underline{C/C++} and \underline{Matlab}.
+\item Train a SVM classifier to help us automatically classify Japanese patents using \underline{LibSVM}.
 \end{itemize}
 }
 \vspace{-4mm}
-\tldatelabelcventry[royal]{2014}{2011.11}{Science and Technology Innovation}{Part 2-B}{}{\hfill Score: 96}{
+\tldatelabelcventry[royal]{2014}{2011.11}{Project Leader}{Course Project of Operating System}{}{\hfill Score: 97}{
 \begin{itemize}
-\item Program a toy car that can automatically run along the track using \underline{C/C++}.
-\item Use a camera to capture surroundings and then  generate the route of the car using \underline{OpenCV}.
-\end{itemize}
-}
-% \vspace{-4mm}
-% \tldatelabelcventry[black]{2011}{2011.11}{Science and Technology Innovation}{Part 3-D}{}{\hfill Score: 94.3}{Lectures are about cloud computing and % virtualization. Course project is about judging whether the application is running under a virtual machine or not. \underline{C} and \underline{assembly} is used to finish the project.}
-\vspace{-4mm}
-\tldatelabelcventry[royal]{2014}{2011.11}{Course Project of Operating System}{Design and implementation}{}{\hfill Score: 97}{
-\begin{itemize}
+\setlength{\itemindent}{1em}
 \item Learn about file system and design a distributed file system using \underline{advanced Linux programming}.
 \item Master \underline{socket programming} to set up connections between clients and server to transfer commands.
 \end{itemize}
 }
 \vspace{-4mm}
-\tldatelabelcventry[royal]{2016}{2012.4}{Science and Technology Innovation}{Patrt 4-J}{}{\hfill Score: 95}{
+\tldatelabelcventry[royal]{2014}{2011.11}{Project Member}{Science and Technology Innovation Part 2-B}{}{\hfill Score: 96}{
 \begin{itemize}
-\item Learn about the principals of neural network and implement one on our own using \underline{C/C++} and \underline{Mablab}.
-\item Train a SVM classifier to help us automatically classify Japanese patents using \underline{LibSVM}.
+\setlength{\itemindent}{1em}
+\item Program a toy car that can automatically run along the track using \underline{C/C++}.
+\item Use a camera to capture surroundings and then  generate the route of the car using \underline{OpenCV}.
 \end{itemize}
 }
+%\vspace{-4mm}
+%\tldatelabelcventry[royal]{2012}{2011.4}{Project Leader}{Computer Organization Lab}{}{\hfill Score: 94}{
+%\begin{itemize}
+%\setlength{\itemindent}{1em}
+%\item Implement a CPU that supports MIPS intructions on Xilinx FPGA experimental board.
+%\item Use \underline{Verilog} to achieve 5-stage pipeline.
+%\end{itemize}
+%}
 
+% --- Computer Skills ---
 \section{Computer Skills}
 \cvline{Programming}{C/C++, Matlab, Python, Ruby, Perl, Java, JavaScript, PHP, MySQL, Awk, Octave, Bash.}
 \cvline{Document}{\LaTeX, Word, Excel, Vim, TeXworks, Gnuplot, Visio.}
 
 \section{Activities}
 \subsection{Professional Activities}
-\vspace{-3mm}
-\tldatelabelcventry[royal]{2016}{2012.6}{External Reviewer}{}{}{for IEEE Transactions on Parallel and Distributed Systems}{}
-\vspace{-8mm}
-\tldatelabelcventry[royal]{2018}{2012.9}{External Reviewer}{}{}{for IEEE International Conference on Computer Communications}{}
-\vspace{-8mm}
-\tldatelabelcventry[royal]{2018}{2012.9}{External Reviewer}{}{}{for International Symposium on High-Performance Computer Architecture}{}
-\vspace{-5mm}
-\subsection{Social Activities}
-\vspace{-3mm}
-\tldatelabelcventry[royal]{2011}{2010.10}{Volunteer}{}{}{Volunteer in Shanghai 2010 EXPO for traffic and service information consulting}{}
-\vspace{-4mm}
-\tllabelcventry[royal]{2013}{2016}{2011.6-2012.5}{President}{}{}{of Shanghai Jiao Tong University Football Association}{
+\tllabelcventry[royal]{2016}{2018}{2012.6-9}{External Reviewer}{}{}{}{
 \begin{itemize}
-\item SJTUFA has more than 50 members with a yearly budget of 10,000 RMB.
-\item This year, SJTUFA got patronage from a local company and use the money to promote Xiwang Cup.
+\setlength{\itemindent}{1em}
+\item IEEE Transactions on Parallel and Distributed Systems (TPDS) \hfill{2012.6}
+\item IEEE International Conference on Computer Communications (INFOCOM) \hfill{2012.9}
+\item International Symposium on High-Performance Computer Architecture (HPCA) \hfill{2012.9}
 \end{itemize}
 }
-\tllabelcventry[royal]{2011}{0}{2010.9}{Left back}{}{}{Team of School of Electronic Information and Electrical Engineering}{
+\tllabelcventry[royal]{2016}{0}{2012.6-}{Student Member}{}{}{}{
 \begin{itemize}
+\setlength{\itemindent}{1em}
+\item Association for Computing Machinery (ACM) Student Member
+\item China Computer Association (CCF) Student Member
+\end{itemize}
+}
+\subsection{Social Activities}
+\tllabelcventry[royal]{2013}{2016}{2011.6-2012.5}{President}{of Shanghai Jiao Tong University Soccer Association}{}{}{
+\begin{itemize}
+\setlength{\itemindent}{1em}
+\item Have more than 50 members with a yearly budget of 10,000 RMB.
+\item Receive patronage from a local company and use the money to promote Xiwang Cup.
+\end{itemize}
+}
+\vspace{-4mm}
+\tldatelabelcventry[royal]{2011}{2010.10}{Volunteer}{The World Expo 2010 Shanghai}{}{}{
+\begin{itemize}
+\setlength{\itemindent}{1em}
+\item Traffic and service information consulting
+\end{itemize}}
+\tllabelcventry[royal]{2011}{0}{2010.9-}{Left back}{Soccer Team of School of Electronic Information and Electrical Engineering}{}{}{
+\begin{itemize}
+\setlength{\itemindent}{1em}
 \item Won the second place in the $22^{nd}$ Xiwang Cup in May, 2011.
 \item Won the first place in the $23^{rd}$ Xiwang Cup in May, 2012.
 \end{itemize}}
